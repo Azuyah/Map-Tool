@@ -17,10 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QSettings settings(QString ("/config/config.ini"), QSettings::Format::IniFormat);
+    QSettings settings(QString ("/config/config.ini"), QSettings::Format::IniFormat);      // Get directory for Tree View
     QString defaultPathDir = settings.value("PATH/defaultPath").toString();
-
-  //  QDir treeDir = defaultPathDir;
 
     model = new QFileSystemModel(this);
     model->setReadOnly(true);
