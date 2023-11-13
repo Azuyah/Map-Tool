@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>536</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>.AppleSystemUIFont</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Map tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Desktop/Hellion Edited/PNG/Source File_Hellion-03.png</normaloff>../Desktop/Hellion Edited/PNG/Source File_Hellion-03.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>License plate:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Search maps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Create new</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>230</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>410</y>
+      <width>85</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>ECU</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>410</y>
+      <width>85</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>TCU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>440</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>380</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Brand:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>380</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>License plate:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="brandName">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>350</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+    <item>
+     <property name="text">
+      <string>Audi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bmw</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cadillac</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Citroen</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fiat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ford</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Honda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mazda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mercedes-Benz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MINI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nissan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Opel</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Peugeot</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Porsche</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Renault</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Saab</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Seat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Skoda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Subaru</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Toyota</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Volvo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VW</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Brand:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="brandName_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+    <item>
+     <property name="text">
+      <string>Audi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bmw</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cadillac</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Citroen</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fiat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ford</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Honda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mazda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mercedes-Benz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MINI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nissan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Opel</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Peugeot</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Porsche</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Renault</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Saab</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Seat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Skoda</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Subaru</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Toyota</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Volvo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VW</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>270</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+     </font>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <bold>false</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Hellion.qrc">:/new/prefix1/Source File_Edited_Hellion-04.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>-100</x>
+      <y>-100</y>
+      <width>971</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Hellion.qrc">:/new/prefix1/WallpaperDog-20610732.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTreeView" name="folderView">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>351</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="allColumnsShowFocus">
+     <bool>true</bool>
+    </property>
+    <attribute name="headerVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="headerStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <zorder>label_8</zorder>
+   <zorder>label</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>checkBox_2</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>brandName</zorder>
+   <zorder>label_6</zorder>
+   <zorder>brandName_2</zorder>
+   <zorder>line</zorder>
+   <zorder>label_7</zorder>
+   <zorder>folderView</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>722</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionfilePath"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionInstructions"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionfilePath">
+   <property name="text">
+    <string>File path</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionInstructions">
+   <property name="text">
+    <string>Instructions</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Hellion.qrc"/>
+ </resources>
+ <connections/>
+</ui>

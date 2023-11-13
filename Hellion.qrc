@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Source File_Edited_Hellion-04.svg</file>
+        <file>Source File_Edited_Hellion-02.svg</file>
+        <file>WallpaperDog-20610732.jpg</file>
+    </qresource>
+</RCC>
