@@ -32,11 +32,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->folderView->setRootIndex(model->index(defaultPathDir));
 }
 
-/*void MainWindow::toggleWindow()
-{
-    this->resize(QSize(715, 536));
-}*/
-
 
 MainWindow::~MainWindow()
 {

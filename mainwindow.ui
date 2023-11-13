@@ -608,6 +608,9 @@
       <height>131</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="text">
      <string>...</string>
     </property>
