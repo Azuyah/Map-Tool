@@ -1,0 +1,35 @@
+Map Tool is a tool created to ease the navigation and creation of map files and folders.
+
+Use the search function to easily open a project folder using the license plate -or other identifer- where you have saved your files.
+
+Use the create function to create a ready-to-use folder in the correct location, with the appropriate names and sub-folders for your project.
+
+Set your desired location for your folders using the "Settings" and "File Path" buttons in the main window.
+
+
+File Paths:
+
+1. File paths must always be written with forward slashes "/" and not backward slashes "\" or the program cannot find the correct directory.
+2. File path must begin and end with a forward slash.
+3. If the path contains special letters it may not function properly, if so, replace the special character with a regular one.
+
+
+Searching:
+
+1. The search function is case-sensitive so make sure you type the folder name exactly as it is named.
+2. If you leave the search box empty it will open the main folder of that vehicle brand.
+
+Creating:
+
+1. If you leave the ECU and TCU checkboxes blank the program will create read/write folders directly in the new folder you're creating.
+2. The program will always create one "read" and one "write" folder in each path, wheter you select ECU, TCU, both or none.
+
+
+End.
+
+If you have suggestions, run into problems or have any kind of feedback contact the owner at hassleholm@nmstuning.se
+
+
+Created by Eddie Andersson.
+
+Instructions last updated at 23/11/12, 16:58
