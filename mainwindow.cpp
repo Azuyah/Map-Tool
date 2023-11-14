@@ -26,17 +26,18 @@ MainWindow::MainWindow(QWidget *parent)
     model = new QFileSystemModel(this);
     model->setReadOnly(true);
 
-
     ui->folderView->setModel(model);
-    model->setRootPath("C:/" + defaultPathDir);
-    ui->folderView->setRootIndex(model->index("C:/" + defaultPathDir));
-}
+    model->setRootPath(defaultPathDir);
+    ui->folderView->setRootIndex(model->index(defaultPathDir));
 
+
+}
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
 
 //Access your datafile
 

@@ -3,6 +3,7 @@
 #include "QSettings"
 #include "QString"
 #include "QCoreApplication"
+#include "QFileDialog"
 
  extern QString defaultPathDir;
 
@@ -12,7 +13,7 @@ Dialog::Dialog(QWidget *parent) :
 {
 
     ui->setupUi(this);
-ui->currentPathLine->setPlaceholderText(defaultPathDir);
+    ui->currentPathLine->setPlaceholderText(defaultPathDir);
 
 }
 
@@ -27,11 +28,26 @@ void Dialog::on_pushButton_2_clicked()
     accept();
 }
 
+void Dialog::on_pushButton_clicked()
+{
+
+     QFileDialog dialog(this);
+     QString folderSelection = dialog.QFileDialog::getExistingDirectory(this, "Choose Folder");
+     dialog.setFileMode(QFileDialog::Directory);
+     dialog.setViewMode(QFileDialog::List);
+     if (folderSelection.isEmpty()){
+         return;
+     } else {
+     ui->pathEdit->setText(folderSelection + "/");
+     }
+
+}
 
 void Dialog::on_savePathButton_clicked()
 {
 
-    QSettings settings(QString ("/config/config.ini"), QSettings::Format::IniFormat);
-    settings.setValue("PATH/defaultPath", (ui->pathEdit->text()));
+     QSettings settings(QString ("/config/config.ini"), QSettings::Format::IniFormat);
+     settings.setValue("PATH/defaultPath", (ui->pathEdit->text()));
      accept();
 }
+
