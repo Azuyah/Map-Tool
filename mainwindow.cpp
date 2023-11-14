@@ -28,8 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     ui->folderView->setModel(model);
-    model->setRootPath(defaultPathDir);
-    ui->folderView->setRootIndex(model->index(defaultPathDir));
+    model->setRootPath("C:/" + defaultPathDir);
+    ui->folderView->setRootIndex(model->index("C:/" + defaultPathDir));
 }
 
 
@@ -115,7 +115,7 @@ void MainWindow::on_actionAbout_triggered()                  // Opens the "About
 
 void MainWindow::on_actionInstructions_triggered()
 {
-    QDesktopServices::openUrl(QUrl ("file://" + QCoreApplication::applicationDirPath() + "/config/Instructions.txt", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl (QCoreApplication::applicationDirPath() + "/config/Instructions.txt", QUrl::TolerantMode));
 }
 
 void MainWindow::on_toggleTree_clicked(bool clicked)

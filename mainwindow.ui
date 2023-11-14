@@ -486,7 +486,7 @@
      <rect>
       <x>0</x>
       <y>270</y>
-      <width>341</width>
+      <width>311</width>
       <height>20</height>
      </rect>
     </property>
@@ -615,7 +615,8 @@
      <string>...</string>
     </property>
     <property name="icon">
-     <iconset theme="folder"/>
+     <iconset theme="folder">
+      <normaloff>.</normaloff>.</iconset>
     </property>
     <property name="checkable">
      <bool>true</bool>
@@ -650,7 +651,7 @@
      <x>0</x>
      <y>0</y>
      <width>340</width>
-     <height>24</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSettings">
