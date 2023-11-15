@@ -113,7 +113,7 @@ void MainWindow::on_actionAbout_triggered()                  // Opens the "About
 
 void MainWindow::on_actionInstructions_triggered()
 {
-    QDesktopServices::openUrl(QUrl (QCoreApplication::applicationDirPath() + "/config/instructions.txt", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl (QCoreApplication::QCoreApplication::applicationDirPath() + "/config/instructions.txt", QUrl::TolerantMode));
 }
 
 void MainWindow::on_toggleTree_clicked(bool clicked)
