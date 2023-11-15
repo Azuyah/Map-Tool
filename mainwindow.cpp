@@ -27,10 +27,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     model = new QFileSystemModel(this);
     model->setReadOnly(true);
-
     ui->folderView->setModel(model);
     model->setRootPath(defaultPathDir);
     ui->folderView->setRootIndex(model->index(defaultPathDir));
+    ui->folderView->setColumnWidth(0, 600);
+    ui->folderView->setColumnWidth(1, 0);
+    ui->folderView->setColumnWidth(2, 0);
+    ui->folderView->setColumnWidth(3, 0);
 
 
 }
