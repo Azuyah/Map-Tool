@@ -43,8 +43,8 @@ MainWindow::~MainWindow()
 
  QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
  QSettings settings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
- QString defaultPathDir = settings.value("PATH/defaultPath").toString();     // Default location for folders to be saved
- QString defaultPathURL = ("file://" + defaultPathDir);                        // Adds the "file://" prefix to the URL or the QUrl function breaks
+ QString defaultPathDir = settings.value("PATH/defaultPath").toString().remove(0, 2);     // Default location for folders to be saved
+ QString defaultPathURL = ("file://" + defaultPathDir);                       // Adds the "file://" prefix to the URL or the QUrl function breaks
 
 
 void MainWindow::on_pushButton_clicked()  // Button for opening a folder
@@ -116,7 +116,7 @@ void MainWindow::on_actionAbout_triggered()                  // Opens the "About
 
 void MainWindow::on_actionInstructions_triggered()
 {
-    QDesktopServices::openUrl(QUrl (QCoreApplication::applicationDirPath() + "/config/Instructions.txt", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl (QCoreApplication::applicationDirPath() + "/config/instructions.txt", QUrl::TolerantMode));
 }
 
 void MainWindow::on_toggleTree_clicked(bool clicked)

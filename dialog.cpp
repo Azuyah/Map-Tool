@@ -45,8 +45,8 @@ void Dialog::on_pushButton_clicked()
 
 void Dialog::on_savePathButton_clicked()
 {
-
-     QSettings settings(QString ("/config/config.ini"), QSettings::Format::IniFormat);
+     QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
+     QSettings settings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
      settings.setValue("PATH/defaultPath", (ui->pathEdit->text()));
      accept();
 }
