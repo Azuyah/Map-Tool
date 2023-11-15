@@ -2,6 +2,8 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include "QSettings"
+#include "QCoreApplication"
 
 namespace Ui {
 class Dialog;
@@ -24,6 +26,9 @@ private slots:
 
 private:
     Ui::Dialog *ui;
+    QSettings *settings;
+    QString defaultPathDir;
+    QString defaultPathURL;
 };
 
 #endif // DIALOG_H

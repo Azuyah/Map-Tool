@@ -19,8 +19,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
      QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
-     QSettings settings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
-     QString defaultPathDir = settings.value("PATH/defaultPath").toString();
+     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
+     defaultPathDir = settings->value("PATH/defaultPath").toString();
+     defaultPathURL = "file://" + defaultPathDir;
+     defaultPathURLopen = defaultPathURL.remove(7,2);
 
 
     model = new QFileSystemModel(this);
@@ -38,19 +40,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-//Access your datafile
-
- QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
- QSettings settings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
- QString defaultPathDir = settings.value("PATH/defaultPath").toString().remove(0, 2);     // Default location for folders to be saved
- QString defaultPathURL = ("file://" + defaultPathDir);                       // Adds the "file://" prefix to the URL or the QUrl function breaks
-
-
 void MainWindow::on_pushButton_clicked()  // Button for opening a folder
 {
 
-    if (QDesktopServices::openUrl(QUrl (defaultPathURL + (ui->brandName_2->currentText()) + "/" + (ui->lineEdit->text()), QUrl::TolerantMode))) {             // Checks wheter the directory exists or not
+
+    if (QDesktopServices::openUrl(QUrl (defaultPathURLopen + (ui->brandName_2->currentText()) + "/" + (ui->lineEdit->text()), QUrl::TolerantMode))) {             // Checks wheter the directory exists or not
 
     } else {
 
@@ -91,7 +85,7 @@ void MainWindow::on_pushButton_2_clicked() // Button for creating new folders
     ui->checkBox->setChecked(false);
     ui->checkBox_2->setChecked(false);       // These three will clear the checkboxes and text window after the user creates a new folder.
 
-    QDesktopServices::openUrl(QUrl (defaultPathURL + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()), QUrl::TolerantMode));    // Opens the folder after it's been created
+    QDesktopServices::openUrl(QUrl (defaultPathURLopen + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()), QUrl::TolerantMode));    // Opens the folder after it's been created
 
         ui->lineEdit_2->clear();
 

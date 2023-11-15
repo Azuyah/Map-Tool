@@ -7,6 +7,8 @@
 #include "errormessage.h"
 #include "errorempty.h"
 #include "QFileSystemModel"
+#include "QSettings"
+#include "QCoreApplication"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -37,5 +39,11 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QFileSystemModel *model;
+    QSettings *settings;
+    QString defaultPathDir;
+    QString defaultPathURL;
+    QString defaultPathURLopen;
+
+    //settings.value("PATH/defaultPath").toString();
 };
 #endif // MAINWINDOW_H
