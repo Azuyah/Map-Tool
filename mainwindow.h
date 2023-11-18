@@ -41,6 +41,10 @@ private slots:
 
     void on_actionEnglish_triggered();
 
+    void on_tuningGuideButton_clicked();
+
+    void on_resellerButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QFileSystemModel *model;

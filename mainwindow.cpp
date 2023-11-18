@@ -19,8 +19,20 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
-     QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
-     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
+    QTranslator translator;
+    QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
+    settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
+    QString userLang = settings->value("LANGUAGE/language").toString();
+    if (userLang.contains("swedish")) {
+        if (!translator.load("untitled1_sv.qm", "/Users/eddie/untitled1")) {
+            assert(!"Failed to load translation");
+        } else {
+            QCoreApplication::installTranslator(&translator);
+            ui->retranslateUi(this);
+        }
+
+    }
+
      defaultPathDir = settings->value("PATH/defaultPath").toString();
      defaultPathURL = "file://" + defaultPathDir;
      defaultPathURLopen = defaultPathURL.remove(7,2);
@@ -121,28 +133,37 @@ void MainWindow::on_toggleTree_clicked(bool clicked)
 {
     if (clicked){
         ui->toggleTree->setArrowType(Qt::LeftArrow);
-        this->resize(QSize(715, 536));
+        this->resize(QSize(764, 536));
     } else {
         ui->toggleTree->setArrowType(Qt::RightArrow);
-        this->resize(QSize(340, 536));
+        this->resize(QSize(382, 536));
     }
 }
 
 
 void MainWindow::on_actionSwedish_triggered()
 {
-    QTranslator* translator = new QTranslator(this);
-    translator->load("untitled1_sv.qm", "/Users/eddie/untitled1/");
-    QCoreApplication::installTranslator(translator);
-    ui->retranslateUi(this);
 
+    QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
+    settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
+    settings->setValue("LANGUAGE/language", "swedish");
 }
 
 void MainWindow::on_actionEnglish_triggered()
 {
-    QTranslator* translator = new QTranslator(this);
-    translator->load("untitled1_en.qm", "/Users/eddie/untitled1/");
-    QCoreApplication::installTranslator(translator);
-    ui->retranslateUi(this);
+    QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
+    settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
+    settings->setValue("LANGUAGE/language", "english");
+}
+
+void MainWindow::on_tuningGuideButton_clicked()
+{
+      QDesktopServices::openUrl(QUrl ("https://nmstuning.se/motoroptimering/"));
+}
+
+
+void MainWindow::on_resellerButton_clicked()
+{
+      QDesktopServices::openUrl(QUrl ("https://reseller.nmstuning.se"));
 }
 
