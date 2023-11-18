@@ -2,6 +2,7 @@
 #define ERROREMPTY_H
 
 #include <QDialog>
+#include "QTranslator"
 
 namespace Ui {
 class errorEmpty;

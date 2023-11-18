@@ -9,6 +9,7 @@
 #include "QFileSystemModel"
 #include "QSettings"
 #include "QCoreApplication"
+#include "QTranslator"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -36,6 +37,10 @@ private slots:
 
     void on_toggleTree_clicked(bool checked);
 
+    void on_actionSwedish_triggered();
+
+    void on_actionEnglish_triggered();
+
 private:
     Ui::MainWindow *ui;
     QFileSystemModel *model;
@@ -43,6 +48,7 @@ private:
     QString defaultPathDir;
     QString defaultPathURL;
     QString defaultPathURLopen;
+    QTranslator *translator;
 
     //settings.value("PATH/defaultPath").toString();
 };

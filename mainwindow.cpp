@@ -9,6 +9,7 @@
 #include "QCoreApplication"
 #include "QFileInfo"
 #include "QFileSystemModel"
+#include "QTranslator"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -119,9 +120,29 @@ void MainWindow::on_actionInstructions_triggered()
 void MainWindow::on_toggleTree_clicked(bool clicked)
 {
     if (clicked){
+        ui->toggleTree->setArrowType(Qt::LeftArrow);
         this->resize(QSize(715, 536));
     } else {
+        ui->toggleTree->setArrowType(Qt::RightArrow);
         this->resize(QSize(340, 536));
     }
+}
+
+
+void MainWindow::on_actionSwedish_triggered()
+{
+    QTranslator* translator = new QTranslator(this);
+    translator->load("untitled1_sv.qm", "/Users/eddie/untitled1/");
+    QCoreApplication::installTranslator(translator);
+    ui->retranslateUi(this);
+
+}
+
+void MainWindow::on_actionEnglish_triggered()
+{
+    QTranslator* translator = new QTranslator(this);
+    translator->load("untitled1_en.qm", "/Users/eddie/untitled1/");
+    QCoreApplication::installTranslator(translator);
+    ui->retranslateUi(this);
 }
 

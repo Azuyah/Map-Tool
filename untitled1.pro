@@ -30,6 +30,10 @@ FORMS += \
     errormessage.ui \
     mainwindow.ui
 
+TRANSLATIONS += \
+    untitled1_sv.ts \
+    untitled1_en.ts
+
 # Default rules for deployment.
 TARGET = "Map Tool"
 RC_ICONS = icon.ico

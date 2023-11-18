@@ -125,7 +125,7 @@
      </font>
     </property>
     <property name="text">
-     <string>ECU</string>
+     <string notr="true">ECU</string>
     </property>
     <property name="checked">
      <bool>false</bool>
@@ -149,7 +149,7 @@
      </font>
     </property>
     <property name="text">
-     <string>TCU</string>
+     <string notr="true">TCU</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -220,6 +220,9 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="currentText">
+     <string notr="true">Audi</string>
+    </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
@@ -233,7 +236,7 @@
     </item>
     <item>
      <property name="text">
-      <string>BMW</string>
+      <string>Bmw</string>
      </property>
     </item>
     <item>
@@ -363,6 +366,9 @@
       <width>121</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="currentText">
+     <string notr="true">Audi</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -624,6 +630,9 @@
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonIconOnly</enum>
     </property>
+    <property name="arrowType">
+     <enum>Qt::RightArrow</enum>
+    </property>
    </widget>
    <zorder>label_8</zorder>
    <zorder>label</zorder>
@@ -651,15 +660,23 @@
      <x>0</x>
      <y>0</y>
      <width>340</width>
-     <height>19</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
      <string>Settings</string>
     </property>
+    <widget class="QMenu" name="menuLanguage">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionSwedish"/>
+    </widget>
     <addaction name="actionfilePath"/>
     <addaction name="separator"/>
+    <addaction name="menuLanguage"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -690,6 +707,16 @@
   <action name="actionInstructions">
    <property name="text">
     <string>Instructions</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionSwedish">
+   <property name="text">
+    <string>Swedish</string>
    </property>
   </action>
  </widget>

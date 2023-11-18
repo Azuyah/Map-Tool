@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "QSettings"
 #include "QCoreApplication"
+#include "QTranslator"
 
 namespace Ui {
 class Dialog;

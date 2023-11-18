@@ -2,6 +2,7 @@
 #define ERRORMESSAGE_H
 
 #include <QDialog>
+#include "QTranslator"
 
 namespace Ui {
 class errorMessage;
