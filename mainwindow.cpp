@@ -133,10 +133,10 @@ void MainWindow::on_toggleTree_clicked(bool clicked)
 {
     if (clicked){
         ui->toggleTree->setArrowType(Qt::LeftArrow);
-        this->resize(QSize(764, 536));
+        this->resize(QSize(725, 536));
     } else {
         ui->toggleTree->setArrowType(Qt::RightArrow);
-        this->resize(QSize(382, 536));
+        this->resize(QSize(356, 536));
     }
 }
 
