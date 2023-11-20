@@ -551,14 +551,14 @@
    </widget>
    <widget class="QLabel" name="backgroundImg">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>-50</x>
-      <y>-40</y>
-      <width>971</width>
-      <height>741</height>
+      <x>130</x>
+      <y>-30</y>
+      <width>711</width>
+      <height>551</height>
      </rect>
     </property>
     <property name="font">
@@ -582,7 +582,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Hellion.qrc">:/new/prefix1/WallpaperDog-20610732.jpg</pixmap>
+     <pixmap resource="Hellion.qrc">:/new/prefix1/background.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

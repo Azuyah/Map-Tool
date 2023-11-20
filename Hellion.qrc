@@ -14,5 +14,6 @@
         <file>ResellerText.png</file>
         <file>TuningText.png</file>
         <file>SupportText.png</file>
+        <file>background.jpg</file>
     </qresource>
 </RCC>
