@@ -12,7 +12,7 @@
         <file>HellionLogoWhite.png</file>
         <file>MapToolLogo.png</file>
         <file>ResellerText.png</file>
+        <file>TuningText.png</file>
         <file>SupportText.png</file>
-        <file>TuningGuideText.png</file>
     </qresource>
 </RCC>
