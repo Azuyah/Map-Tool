@@ -58,9 +58,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()  // Button for opening a folder
 {
-
-
-    if (QDesktopServices::openUrl(QUrl (defaultPathURLopen + (ui->brandName_2->currentText()) + "/" + (ui->lineEdit->text()), QUrl::TolerantMode))) {             // Checks wheter the directory exists or not
+    
+    
+    if (QDesktopServices::openUrl(QUrl (defaultPathURLopen + (ui->BrandNameTop->currentText()) + "/" + (ui->lineEdit->text()), QUrl::TolerantMode))) {             // Checks wheter the directory exists or not
 
     } else {
 
@@ -68,7 +68,7 @@ void MainWindow::on_pushButton_clicked()  // Button for opening a folder
         dialog->setModal(true);
         dialog->show();
     }
-
+    
     ui->lineEdit->clear();
 
 }
@@ -82,17 +82,17 @@ void MainWindow::on_pushButton_2_clicked() // Button for creating new folders
     }
 
     else {
-    QDir (defaultPathDir + (ui->brandName->currentText())).mkpath(ui->lineEdit_2->text());     // Creates new folder with the name the user has input, in the correct brand folder
+        QDir (defaultPathDir + (ui->brandName->currentText())).mkpath(ui->lineEdit_2->text());     // Creates new folder with the name the user has input, in the correct brand folder
 
     if (ui->checkBox->isChecked()) {        // Checks if user checked the ECU checkbox, if so, creates ECU folder
-
-        QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Read");
-        QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Write");
+            
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Read");
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Write");
     }
     else {
     }
     if (ui->checkBox_2->isChecked()) {        // Checks if user checked the TCU checkbox, if so, creates TCU folder
-
+            
             QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Read");
             QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Write");
     }
@@ -100,10 +100,10 @@ void MainWindow::on_pushButton_2_clicked() // Button for creating new folders
     }
     ui->checkBox->setChecked(false);
     ui->checkBox_2->setChecked(false);       // These three will clear the checkboxes and text window after the user creates a new folder.
-
+    
     QDesktopServices::openUrl(QUrl (defaultPathURLopen + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()), QUrl::TolerantMode));    // Opens the folder after it's been created
-
-        ui->lineEdit_2->clear();
+    
+    ui->lineEdit_2->clear();
 
     }
 }
@@ -133,10 +133,10 @@ void MainWindow::on_toggleTree_clicked(bool clicked)
 {
     if (clicked){
         ui->toggleTree->setArrowType(Qt::LeftArrow);
-        this->resize(QSize(725, 536));
+        this->resize(QSize(825, 536));
     } else {
         ui->toggleTree->setArrowType(Qt::RightArrow);
-        this->resize(QSize(356, 536));
+        this->resize(QSize(455, 536));
     }
 }
 
