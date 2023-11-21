@@ -6,6 +6,8 @@ errorMessage::errorMessage(QWidget *parent) :
     ui(new Ui::errorMessage)
 {
     ui->setupUi(this);
+
+
 }
 
 errorMessage::~errorMessage()

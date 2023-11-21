@@ -169,3 +169,9 @@ void MainWindow::on_resellerButton_clicked()
       QDesktopServices::openUrl(QUrl (resellerSite));
 }
 
+
+void MainWindow::on_exitButton_clicked()
+{
+      qApp->quit();
+}
+

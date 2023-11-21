@@ -4,7 +4,7 @@
 #include "QString"
 #include "QCoreApplication"
 #include "QFileDialog"
-#include "mainwindow.h"
+#include "QTranslator"
 
 
 
