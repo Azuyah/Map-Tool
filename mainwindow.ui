@@ -60,16 +60,16 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>90</y>
-      <width>111</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Segoe UI</family>
-      <pointsize>20</pointsize>
+      <pointsize>18</pointsize>
       <italic>false</italic>
       <bold>false</bold>
      </font>
@@ -82,15 +82,15 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>290</y>
+      <y>287</y>
       <width>151</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Segoe UI</family>
-      <pointsize>20</pointsize>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="text">
@@ -271,7 +271,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Mercedes-Benz</string>
+      <string>Mercedes</string>
      </property>
     </item>
     <item>
@@ -418,7 +418,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Mercedes-Benz</string>
+      <string>Mercedes</string>
      </property>
     </item>
     <item>
@@ -561,6 +561,12 @@
       <height>551</height>
      </rect>
     </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>5</width>
+      <height>5</height>
+     </size>
+    </property>
     <property name="font">
      <font>
       <family>.AppleSystemUIFont</family>
@@ -682,6 +688,9 @@
       <height>49</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::TabFocus</enum>
     </property>
@@ -718,6 +727,9 @@
       <width>140</width>
       <height>49</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
      <string/>
@@ -914,7 +926,7 @@
      <x>0</x>
      <y>0</y>
      <width>455</width>
-     <height>24</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSettings">

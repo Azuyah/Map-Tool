@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
     QString userLang = settings->value("LANGUAGE/language").toString();
     if (userLang.contains("swedish")) {
-        if (!translator.load("untitled1_sv.qm", "/Users/eddie/untitled1")) {
+        if (!translator.load("untitled1_sv.qm", QCoreApplication::QCoreApplication::applicationDirPath())) {
             assert(!"Failed to load translation");
         } else {
             QCoreApplication::installTranslator(&translator);
@@ -158,12 +158,14 @@ void MainWindow::on_actionEnglish_triggered()
 
 void MainWindow::on_tuningGuideButton_clicked()
 {
-      QDesktopServices::openUrl(QUrl ("https://nmstuning.se/motoroptimering/"));
+      QString tuningGuide = settings->value("WEB/tuningGuide").toString();
+      QDesktopServices::openUrl(QUrl (tuningGuide));
 }
 
 
 void MainWindow::on_resellerButton_clicked()
 {
-      QDesktopServices::openUrl(QUrl ("https://reseller.nmstuning.se"));
+      QString resellerSite = settings->value("WEB/resellerSite").toString();
+      QDesktopServices::openUrl(QUrl (resellerSite));
 }
 
