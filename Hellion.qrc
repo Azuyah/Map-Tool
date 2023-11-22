@@ -13,5 +13,12 @@
         <file>TuningText.png</file>
         <file>SupportText.png</file>
         <file>car4.png</file>
+        <file>C6.png</file>
+        <file>C5.png</file>
+        <file>Carbon7.png</file>
+        <file>emailIcon.png</file>
+        <file>exitText.png</file>
+        <file>quitIcon.png</file>
+        <file>SidebarBG.png</file>
     </qresource>
 </RCC>

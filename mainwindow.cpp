@@ -23,15 +23,15 @@ MainWindow::MainWindow(QWidget *parent)
     QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
     QString userLang = settings->value("LANGUAGE/language").toString();
-    if (userLang.contains("swedish")) {
+      if (userLang.contains("swedish")) {
         if (!translator.load("untitled1_sv.qm", QCoreApplication::QCoreApplication::applicationDirPath())) {
-            assert(!"Failed to load translation");
-        } else {
-            QCoreApplication::installTranslator(&translator);
-            ui->retranslateUi(this);
-        }
+           assert(!"Failed to load translation");
+           } else {
+              QCoreApplication::installTranslator(&translator);
+              ui->retranslateUi(this);
+           }
 
-    }
+     }
 
      defaultPathDir = settings->value("PATH/defaultPath").toString();
      defaultPathURL = "file://" + defaultPathDir;
@@ -167,5 +167,18 @@ void MainWindow::on_resellerButton_clicked()
 {
       QString resellerSite = settings->value("WEB/resellerSite").toString();
       QDesktopServices::openUrl(QUrl (resellerSite));
+}
+
+
+void MainWindow::on_exitButton_clicked()
+{
+      qApp->quit();
+}
+
+
+void MainWindow::on_supportButton_clicked()
+{
+      QString supportSite = settings->value("WEB/support").toString();
+      QDesktopServices::openUrl(QUrl (supportSite));
 }
 
