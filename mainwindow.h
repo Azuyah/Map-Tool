@@ -47,6 +47,8 @@ private slots:
 
     void on_exitButton_clicked();
 
+    void on_supportButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QFileSystemModel *model;
@@ -55,7 +57,5 @@ private:
     QString defaultPathURL;
     QString defaultPathURLopen;
     QTranslator *translator;
-
-    //settings.value("PATH/defaultPath").toString();
 };
 #endif // MAINWINDOW_H
