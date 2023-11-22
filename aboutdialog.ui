@@ -43,16 +43,16 @@
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>310</y>
+     <y>320</y>
      <width>91</width>
-     <height>31</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Solano Gothic Pro MVB Semibold</family>
-     <pointsize>14</pointsize>
-     <bold>true</bold>
+     <family>Arial Narrow</family>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -70,9 +70,9 @@
    </property>
    <property name="font">
     <font>
-     <family>Solano Gothic Pro MVB Semibold</family>
-     <pointsize>14</pointsize>
-     <bold>true</bold>
+     <family>Arial Narrow</family>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -82,17 +82,17 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>390</y>
+     <x>70</x>
+     <y>387</y>
      <width>261</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Solano Gothic Pro MVB Semibold</family>
-     <pointsize>14</pointsize>
-     <bold>true</bold>
+     <family>Arial Narrow</family>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -154,8 +154,8 @@
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>390</y>
+     <x>110</x>
+     <y>380</y>
      <width>118</width>
      <height>3</height>
     </rect>
@@ -167,8 +167,8 @@
   <widget class="Line" name="line_3">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>430</y>
+     <x>110</x>
+     <y>420</y>
      <width>118</width>
      <height>3</height>
     </rect>
