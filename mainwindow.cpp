@@ -182,3 +182,15 @@ void MainWindow::on_supportButton_clicked()
       QDesktopServices::openUrl(QUrl (supportSite));
 }
 
+
+void MainWindow::on_lineEdit_returnPressed()
+{
+    MainWindow::on_pushButton_clicked();
+}
+
+
+void MainWindow::on_lineEdit_2_returnPressed()
+{
+    MainWindow::on_pushButton_2_clicked();
+}
+

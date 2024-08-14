@@ -49,6 +49,10 @@ private slots:
 
     void on_supportButton_clicked();
 
+    void on_lineEdit_returnPressed();
+
+    void on_lineEdit_2_returnPressed();
+
 private:
     Ui::MainWindow *ui;
     QFileSystemModel *model;

@@ -25,6 +25,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButtonRestart_clicked();
+
 private:
     Ui::Dialog *ui;
     QSettings *settings;

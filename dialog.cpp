@@ -1,11 +1,13 @@
 #include "dialog.h"
 #include "errorempty.h"
+#include "restartapp.h"
 #include "ui_dialog.h"
 #include "QSettings"
 #include "QString"
 #include "QCoreApplication"
 #include "QFileDialog"
 #include "QTranslator"
+
 
 
 
@@ -75,6 +77,17 @@ void Dialog::on_savePathButton_clicked()                 // Saves new path
      settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
      settings->setValue("PATH/defaultPath", (ui->pathEdit->text()));
      accept();
+     {
+         restartApp *dialog = new restartApp(this);
+         dialog->setModal(true);
+         dialog->show();
      }
+     }
+}
+
+
+void Dialog::on_pushButtonRestart_clicked()
+{
+
 }
 

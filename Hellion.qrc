@@ -20,5 +20,10 @@
         <file>exitText.png</file>
         <file>quitIcon.png</file>
         <file>SidebarBG.png</file>
+        <file>Hellion_noline_red.png</file>
+        <file>Hellion_noline.png</file>
+        <file>Hellion_motorsport_blackbackground.png</file>
+        <file>Hellion_noline.svg</file>
+        <file>Hellion_noline_red.svg</file>
     </qresource>
 </RCC>

@@ -14,21 +14,24 @@ SOURCES += \
     errorempty.cpp \
     errormessage.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    restartapp.cpp
 
 HEADERS += \
     aboutdialog.h \
     dialog.h \
     errorempty.h \
     errormessage.h \
-    mainwindow.h
+    mainwindow.h \
+    restartapp.h
 
 FORMS += \
     aboutdialog.ui \
     dialog.ui \
     errorempty.ui \
     errormessage.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    restartapp.ui
 
 TRANSLATIONS += \
     untitled1_sv.ts \
