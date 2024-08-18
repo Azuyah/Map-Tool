@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "restartapp.h"
 #include "QDesktopServices"
 #include "QUrl"
 #include "QDir"
@@ -10,6 +11,7 @@
 #include "QFileInfo"
 #include "QFileSystemModel"
 #include "QTranslator"
+#include <QProcess>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -84,10 +86,23 @@ void MainWindow::on_pushButton_2_clicked() // Button for creating new folders
     else {
         QDir (defaultPathDir + (ui->brandName->currentText())).mkpath(ui->lineEdit_2->text());     // Creates new folder with the name the user has input, in the correct brand folder
 
+         QString userLang = settings->value("LANGUAGE/language").toString();
+
     if (ui->checkBox->isChecked()) {        // Checks if user checked the ECU checkbox, if so, creates ECU folder
-            
-            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Read");
-            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Write");
+
+            if (userLang.contains("swedish")) {
+
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Läs");
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Skriv");
+
+            }
+
+            else {
+                QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Read");
+                QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "ECU" + "/").mkpath("Write");
+
+            }
+
     }
     else {
     }
@@ -147,6 +162,11 @@ void MainWindow::on_actionSwedish_triggered()
     QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
     settings->setValue("LANGUAGE/language", "swedish");
+    {
+        restartApp *dialog = new restartApp(this);
+        dialog->setModal(true);
+        dialog->show();
+    }
 }
 
 void MainWindow::on_actionEnglish_triggered()
@@ -154,6 +174,11 @@ void MainWindow::on_actionEnglish_triggered()
     QString applicationDirPath = QCoreApplication::QCoreApplication::applicationDirPath();
     settings = new QSettings(QString (applicationDirPath + "/config/config.ini"), QSettings::Format::IniFormat);
     settings->setValue("LANGUAGE/language", "english");
+    {
+        restartApp *dialog = new restartApp(this);
+        dialog->setModal(true);
+        dialog->show();
+    }
 }
 
 void MainWindow::on_tuningGuideButton_clicked()
