@@ -107,9 +107,19 @@ void MainWindow::on_pushButton_2_clicked() // Button for creating new folders
     else {
     }
     if (ui->checkBox_2->isChecked()) {        // Checks if user checked the TCU checkbox, if so, creates TCU folder
-            
+
+        if (userLang.contains("swedish")) {
+
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Läs");
+            QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Skriv");
+
+        }
+
+        else {
             QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Read");
             QDir (defaultPathDir + (ui->brandName->currentText()) + "/" + (ui->lineEdit_2->text()) + "/" + "TCU" + "/").mkpath("Write");
+
+        }
     }
     else {
     }
