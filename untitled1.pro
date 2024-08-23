@@ -39,7 +39,7 @@ TRANSLATIONS += \
 
 # Default rules for deployment.
 TARGET = "Map Tool"
-RC_ICONS = icon.ico
+RC_ICONS = Hellion.ico
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target

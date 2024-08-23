@@ -151,7 +151,7 @@ void MainWindow::on_actionAbout_triggered()                  // Opens the "About
 
 void MainWindow::on_actionInstructions_triggered()
 {
-    QDesktopServices::openUrl(QUrl (QCoreApplication::QCoreApplication::applicationDirPath() + "/config/instructions.txt", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl (QCoreApplication::applicationDirPath() + "/config/instructions.txt", QUrl::TolerantMode));
 }
 
 void MainWindow::on_toggleTree_clicked(bool clicked)
@@ -227,5 +227,12 @@ void MainWindow::on_lineEdit_returnPressed()
 void MainWindow::on_lineEdit_2_returnPressed()
 {
     MainWindow::on_pushButton_2_clicked();
+}
+
+
+void MainWindow::on_atButton_clicked()
+{
+    QString atButton = settings->value("WEB/compatibility").toString();
+    QDesktopServices::openUrl(QUrl (atButton));
 }
 

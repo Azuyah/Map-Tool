@@ -57,7 +57,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="searchMaps">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -78,7 +78,7 @@
      <string>Search maps</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="createNew">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -124,6 +124,9 @@
       <family>Helvetica Neue</family>
      </font>
     </property>
+    <property name="toolTip">
+     <string>Engine</string>
+    </property>
     <property name="text">
      <string notr="true">ECU</string>
     </property>
@@ -147,6 +150,9 @@
      <font>
       <family>Helvetica Neue</family>
      </font>
+    </property>
+    <property name="toolTip">
+     <string>Transmission</string>
     </property>
     <property name="text">
      <string notr="true">TCU</string>
@@ -175,7 +181,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="brandText">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -545,7 +551,7 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="mapToolIcon">
     <property name="geometry">
      <rect>
       <x>4</x>
@@ -780,83 +786,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="guideText">
-    <property name="geometry">
-     <rect>
-      <x>35</x>
-      <y>97</y>
-      <width>95</width>
-      <height>39</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="Text">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="Text">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="font">
-     <font>
-      <family>.AppleSystemUIFont</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="Hellion.qrc">:/new/prefix1/TuningText.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="resellerText">
-    <property name="geometry">
-     <rect>
-      <x>36</x>
-      <y>149</y>
-      <width>66</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>.AppleSystemUIFont</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="Hellion.qrc">:/new/prefix1/ResellerText.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="GuideIcon">
     <property name="geometry">
      <rect>
@@ -895,7 +824,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="hellionIcon">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -927,25 +856,6 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="exitText">
-    <property name="geometry">
-     <rect>
-      <x>35</x>
-      <y>461</y>
-      <width>37</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="Hellion.qrc">:/new/prefix1/exitText.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="exitIcon">
     <property name="geometry">
      <rect>
@@ -960,25 +870,6 @@
     </property>
     <property name="pixmap">
      <pixmap resource="Hellion.qrc">:/new/prefix1/quitIcon.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="supportText">
-    <property name="geometry">
-     <rect>
-      <x>35</x>
-      <y>199</y>
-      <width>64</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="Hellion.qrc">:/new/prefix1/SupportText.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1058,7 +949,7 @@
     <property name="geometry">
      <rect>
       <x>-10</x>
-      <y>200</y>
+      <y>100</y>
       <width>147</width>
       <height>911</height>
      </rect>
@@ -1076,42 +967,186 @@
      <number>-1</number>
     </property>
    </widget>
+   <widget class="QLabel" name="tuningGuideText">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>100</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Tuning Guide&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resellerText">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>142</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Reseller&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="supportText">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>192</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Support&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="exitText">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>457</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Exit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>240</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Vehicle list&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="atButtonIcon">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>250</y>
+      <width>17</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Hellion.qrc">:/new/prefix1/autoTuner.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="atButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>137</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#atButton:hover {
+
+background-color: rgb(255, 0, 0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>backgroundImg</zorder>
    <zorder>sideBarBg</zorder>
    <zorder>LicenseBarTop</zorder>
    <zorder>lineEdit</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
+   <zorder>searchMaps</zorder>
+   <zorder>createNew</zorder>
    <zorder>pushButton</zorder>
    <zorder>checkBox</zorder>
    <zorder>checkBox_2</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>lineEdit_2</zorder>
-   <zorder>label_4</zorder>
+   <zorder>brandText</zorder>
    <zorder>LicenseBarBot</zorder>
    <zorder>brandName</zorder>
    <zorder>BrandNameBarTop</zorder>
    <zorder>BrandNameTop</zorder>
    <zorder>line</zorder>
-   <zorder>label_7</zorder>
+   <zorder>mapToolIcon</zorder>
    <zorder>folderView</zorder>
    <zorder>toggleTree</zorder>
-   <zorder>guideText</zorder>
-   <zorder>resellerText</zorder>
    <zorder>GuideIcon</zorder>
    <zorder>resellerIcon</zorder>
-   <zorder>label_11</zorder>
-   <zorder>tuningGuideButton</zorder>
-   <zorder>resellerButton</zorder>
+   <zorder>hellionIcon</zorder>
    <zorder>line_2</zorder>
-   <zorder>supportText</zorder>
    <zorder>supportIcon</zorder>
-   <zorder>supportButton</zorder>
    <zorder>label</zorder>
    <zorder>sideBarBg_2</zorder>
+   <zorder>exitIcon</zorder>
+   <zorder>tuningGuideText</zorder>
+   <zorder>resellerText</zorder>
+   <zorder>supportText</zorder>
    <zorder>exitText</zorder>
    <zorder>exitButton</zorder>
-   <zorder>exitIcon</zorder>
+   <zorder>resellerButton</zorder>
+   <zorder>supportButton</zorder>
+   <zorder>tuningGuideButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>atButtonIcon</zorder>
+   <zorder>atButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1176,11 +1211,19 @@
    </property>
   </action>
   <action name="actionEnglish">
+   <property name="icon">
+    <iconset resource="Hellion.qrc">
+     <normaloff>:/new/prefix1/Flag_of_the_United_Kingdom.svg.png</normaloff>:/new/prefix1/Flag_of_the_United_Kingdom.svg.png</iconset>
+   </property>
    <property name="text">
     <string>English</string>
    </property>
   </action>
   <action name="actionSwedish">
+   <property name="icon">
+    <iconset resource="Hellion.qrc">
+     <normaloff>:/new/prefix1/Flag_of_Sweden.svg.png</normaloff>:/new/prefix1/Flag_of_Sweden.svg.png</iconset>
+   </property>
    <property name="text">
     <string>Swedish</string>
    </property>

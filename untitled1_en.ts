@@ -48,7 +48,7 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="47"/>
-        <location filename="mainwindow.ui" line="211"/>
+        <location filename="mainwindow.ui" line="217"/>
         <source>License plate:</source>
         <translation></translation>
     </message>
@@ -68,209 +68,244 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="165"/>
+        <location filename="mainwindow.ui" line="128"/>
+        <source>Engine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="155"/>
+        <source>Transmission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="171"/>
         <source>Create</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="193"/>
-        <location filename="mainwindow.ui" line="378"/>
+        <location filename="mainwindow.ui" line="199"/>
+        <location filename="mainwindow.ui" line="384"/>
         <source>Brand:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="239"/>
-        <location filename="mainwindow.ui" line="406"/>
+        <location filename="mainwindow.ui" line="245"/>
+        <location filename="mainwindow.ui" line="412"/>
         <source>Audi</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="244"/>
-        <location filename="mainwindow.ui" line="411"/>
+        <location filename="mainwindow.ui" line="250"/>
+        <location filename="mainwindow.ui" line="417"/>
         <source>Bmw</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="249"/>
-        <location filename="mainwindow.ui" line="416"/>
+        <location filename="mainwindow.ui" line="255"/>
+        <location filename="mainwindow.ui" line="422"/>
         <source>Cadillac</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="254"/>
-        <location filename="mainwindow.ui" line="421"/>
+        <location filename="mainwindow.ui" line="260"/>
+        <location filename="mainwindow.ui" line="427"/>
         <source>Citroen</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="259"/>
-        <location filename="mainwindow.ui" line="426"/>
+        <location filename="mainwindow.ui" line="265"/>
+        <location filename="mainwindow.ui" line="432"/>
         <source>Fiat</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="264"/>
-        <location filename="mainwindow.ui" line="431"/>
+        <location filename="mainwindow.ui" line="270"/>
+        <location filename="mainwindow.ui" line="437"/>
         <source>Ford</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="269"/>
-        <location filename="mainwindow.ui" line="436"/>
+        <location filename="mainwindow.ui" line="275"/>
+        <location filename="mainwindow.ui" line="442"/>
         <source>Honda</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="274"/>
-        <location filename="mainwindow.ui" line="441"/>
+        <location filename="mainwindow.ui" line="280"/>
+        <location filename="mainwindow.ui" line="447"/>
         <source>Jaguar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="279"/>
-        <location filename="mainwindow.ui" line="446"/>
+        <location filename="mainwindow.ui" line="285"/>
+        <location filename="mainwindow.ui" line="452"/>
         <source>Kia</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="284"/>
-        <location filename="mainwindow.ui" line="451"/>
+        <location filename="mainwindow.ui" line="290"/>
+        <location filename="mainwindow.ui" line="457"/>
         <source>Mazda</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="289"/>
-        <location filename="mainwindow.ui" line="456"/>
+        <location filename="mainwindow.ui" line="295"/>
+        <location filename="mainwindow.ui" line="462"/>
         <source>Mercedes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="294"/>
-        <location filename="mainwindow.ui" line="461"/>
+        <location filename="mainwindow.ui" line="300"/>
+        <location filename="mainwindow.ui" line="467"/>
         <source>MINI</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="299"/>
-        <location filename="mainwindow.ui" line="466"/>
+        <location filename="mainwindow.ui" line="305"/>
+        <location filename="mainwindow.ui" line="472"/>
         <source>Nissan</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="304"/>
-        <location filename="mainwindow.ui" line="471"/>
+        <location filename="mainwindow.ui" line="310"/>
+        <location filename="mainwindow.ui" line="477"/>
         <source>Opel</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="309"/>
-        <location filename="mainwindow.ui" line="476"/>
+        <location filename="mainwindow.ui" line="315"/>
+        <location filename="mainwindow.ui" line="482"/>
         <source>Peugeot</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="314"/>
-        <location filename="mainwindow.ui" line="481"/>
+        <location filename="mainwindow.ui" line="320"/>
+        <location filename="mainwindow.ui" line="487"/>
         <source>Porsche</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="319"/>
-        <location filename="mainwindow.ui" line="486"/>
+        <location filename="mainwindow.ui" line="325"/>
+        <location filename="mainwindow.ui" line="492"/>
         <source>Renault</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="324"/>
-        <location filename="mainwindow.ui" line="491"/>
+        <location filename="mainwindow.ui" line="330"/>
+        <location filename="mainwindow.ui" line="497"/>
         <source>Saab</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="329"/>
-        <location filename="mainwindow.ui" line="496"/>
+        <location filename="mainwindow.ui" line="335"/>
+        <location filename="mainwindow.ui" line="502"/>
         <source>Seat</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="334"/>
-        <location filename="mainwindow.ui" line="501"/>
+        <location filename="mainwindow.ui" line="340"/>
+        <location filename="mainwindow.ui" line="507"/>
         <source>Skoda</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="339"/>
-        <location filename="mainwindow.ui" line="506"/>
+        <location filename="mainwindow.ui" line="345"/>
+        <location filename="mainwindow.ui" line="512"/>
         <source>Subaru</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="344"/>
-        <location filename="mainwindow.ui" line="511"/>
+        <location filename="mainwindow.ui" line="350"/>
+        <location filename="mainwindow.ui" line="517"/>
         <source>Suzuki</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="349"/>
-        <location filename="mainwindow.ui" line="516"/>
+        <location filename="mainwindow.ui" line="355"/>
+        <location filename="mainwindow.ui" line="522"/>
         <source>Toyota</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="354"/>
-        <location filename="mainwindow.ui" line="521"/>
+        <location filename="mainwindow.ui" line="360"/>
+        <location filename="mainwindow.ui" line="527"/>
         <source>Volvo</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="359"/>
-        <location filename="mainwindow.ui" line="526"/>
+        <location filename="mainwindow.ui" line="365"/>
+        <location filename="mainwindow.ui" line="532"/>
         <source>VW</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="681"/>
+        <location filename="mainwindow.ui" line="687"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1127"/>
-        <location filename="mainwindow.ui" line="1170"/>
+        <location filename="mainwindow.ui" line="987"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Tuning Guide&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1006"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Reseller&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1024"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Support&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1042"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Exit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1060"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Vehicle list&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1149"/>
+        <location filename="mainwindow.ui" line="1192"/>
         <source>Settings</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1131"/>
+        <location filename="mainwindow.ui" line="1153"/>
         <source>Language</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1142"/>
+        <location filename="mainwindow.ui" line="1164"/>
         <source>Help</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1160"/>
+        <location filename="mainwindow.ui" line="1182"/>
         <source>File path</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1165"/>
+        <location filename="mainwindow.ui" line="1187"/>
         <source>About</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1175"/>
+        <location filename="mainwindow.ui" line="1197"/>
         <source>Instructions</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1180"/>
+        <location filename="mainwindow.ui" line="1206"/>
         <source>English</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1185"/>
+        <location filename="mainwindow.ui" line="1215"/>
         <source>Swedish</source>
         <translation></translation>
     </message>
@@ -289,7 +324,8 @@
     </message>
     <message>
         <location filename="aboutdialog.ui" line="64"/>
-        <source>Version: 1.1.1</source>
+        <source>Version: 1.1.2</source>
+        <oldsource>Version: 1.1.1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

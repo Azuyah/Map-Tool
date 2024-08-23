@@ -6,6 +6,7 @@
 #include "aboutdialog.h"
 #include "errormessage.h"
 #include "errorempty.h"
+#include "restartapp.h"
 #include "QFileSystemModel"
 #include "QSettings"
 #include "QCoreApplication"
@@ -52,6 +53,8 @@ private slots:
     void on_lineEdit_returnPressed();
 
     void on_lineEdit_2_returnPressed();
+
+    void on_atButton_clicked();
 
 private:
     Ui::MainWindow *ui;

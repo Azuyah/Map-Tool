@@ -2,6 +2,7 @@
 #define RESTARTAPP_H
 
 #include <QDialog>
+#include "QTranslator"
 
 namespace Ui {
 class restartApp;
